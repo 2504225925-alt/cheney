@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--
+  姓名：于桐彬 | 学号：24003150115 | 时间：2026-11-23 | 大模型：Hy4
+  首页：canvas 背景动画 + 页面导航，展示姓名/学号/项目名称/项目类别
+-->
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>于桐彬 · 全栈项目导航</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <canvas id="Cheney_canvas"></canvas>
+  <div class="Cheney_wrap">
+    <header class="Cheney_hero">
+      <div class="Cheney_tag">Vibe Coding · 全栈项目实战</div>
+      <h1 class="Cheney_title">基于 Vibe Coding 的<br><span>全栈项目开发</span></h1>
+      <div class="Cheney_info">
+        <span class="Cheney_chip">姓名：于桐彬</span>
+        <span class="Cheney_chip">学号：24003150115</span>
+        <span class="Cheney_chip">项目名称：科技资讯图文平台</span>
+        <span class="Cheney_chip">项目类别：模仿</span>
+      </div>
+    </header>
+
+    <section class="Cheney_nav">
+      <h2 class="Cheney_sectionTitle">页面导航</h2>
+      <div class="Cheney_cards">
+        <a class="Cheney_card" href="database.html">
+          <div class="Cheney_cardIcon">DB</div>
+          <div class="Cheney_cardBody">
+            <h3>数据库连接测试</h3>
+            <p>输入用户名密码，测试后端 /api/db-test 接口</p>
+          </div>
+        </a>
+        <a class="Cheney_card" href="news.html">
+          <div class="Cheney_cardIcon">N</div>
+          <div class="Cheney_cardBody">
+            <h3>科技新闻列表</h3>
+            <p>展示 /api/news 接口链接与新闻数据</p>
+          </div>
+        </a>
+        <a class="Cheney_card" href="image.html">
+          <div class="Cheney_cardIcon">I</div>
+          <div class="Cheney_cardBody">
+            <h3>图文列表</h3>
+            <p>展示 /api/images 接口链接与图文数据</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <footer class="Cheney_footer">于桐彬 · 24003150115 · Express + MySQL 全栈项目</footer>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>

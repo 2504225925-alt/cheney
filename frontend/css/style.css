@@ -1,0 +1,105 @@
+/*
+ * 姓名：于桐彬 | 学号：24003150115 | 时间：2026-11-23 | 大模型：Hy4
+ * 全站样式：所有类名以 Cheney_ 开头
+ */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
+  background: #0f172a;
+  color: #e2e8f0;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+#Cheney_canvas {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  z-index: -1;
+  background: radial-gradient(circle at 20% 20%, #1e3a8a, #0f172a 60%);
+}
+.Cheney_wrap { max-width: 1000px; margin: 0 auto; padding: 48px 20px; }
+.Cheney_hero { text-align: center; padding: 40px 20px; }
+.Cheney_tag {
+  display: inline-block; padding: 6px 18px; border-radius: 999px;
+  background: rgba(96,165,250,.15); border: 1px solid rgba(96,165,250,.4);
+  color: #93c5fd; font-size: 14px; letter-spacing: 1px;
+}
+.Cheney_title { margin: 22px 0 20px; font-size: 46px; line-height: 1.25; font-weight: 800; }
+.Cheney_title span { color: #4ade80; }
+.Cheney_info { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+.Cheney_chip {
+  padding: 8px 16px; border-radius: 10px; font-size: 14px;
+  background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.15);
+}
+.Cheney_nav { margin-top: 24px; }
+.Cheney_sectionTitle {
+  font-size: 22px; margin-bottom: 18px; color: #fff;
+  padding-left: 14px; border-left: 4px solid #4ade80;
+}
+.Cheney_cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px; }
+.Cheney_card {
+  display: flex; gap: 14px; align-items: flex-start;
+  padding: 22px; border-radius: 16px; text-decoration: none;
+  background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.12);
+  color: #e2e8f0; transition: transform .2s, background .2s, border-color .2s;
+}
+.Cheney_card:hover { transform: translateY(-4px); background: rgba(255,255,255,.12); border-color: #4ade80; }
+.Cheney_cardIcon {
+  flex: 0 0 44px; height: 44px; border-radius: 12px;
+  background: linear-gradient(145deg, #2563eb, #4ade80);
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 800; font-size: 15px; color: #fff;
+}
+.Cheney_cardBody h3 { font-size: 18px; margin-bottom: 6px; color: #fff; }
+.Cheney_cardBody p { font-size: 13px; color: #94a3b8; }
+.Cheney_footer { text-align: center; margin-top: 40px; color: #64748b; font-size: 13px; }
+
+/* 通用内容页 */
+.Cheney_page { background: #f1f5f9; color: #1e293b; min-height: 100vh; }
+.Cheney_header {
+  background: linear-gradient(125deg, #142352, #1d4ed8);
+  color: #fff; padding: 28px 32px;
+}
+.Cheney_header h1 { font-size: 28px; font-weight: 800; }
+.Cheney_header p { font-size: 14px; color: #c7d7ff; margin-top: 6px; }
+.Cheney_back {
+  display: inline-block; margin-top: 12px; color: #fff; text-decoration: none;
+  font-size: 14px; padding: 6px 14px; border: 1px solid rgba(255,255,255,.4); border-radius: 8px;
+}
+.Cheney_main { max-width: 1000px; margin: 0 auto; padding: 28px 20px 60px; }
+.Cheney_endpoint {
+  background: #0f172a; color: #4ade80; padding: 14px 18px; border-radius: 10px;
+  font-family: Consolas, monospace; font-size: 14px; margin-bottom: 20px; word-break: break-all;
+}
+.Cheney_endpoint a { color: #93c5fd; }
+.Cheney_grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 18px; }
+.Cheney_item {
+  background: #fff; border-radius: 14px; overflow: hidden;
+  box-shadow: 0 6px 18px rgba(15,23,42,.08); border: 1px solid #e2e8f0;
+}
+.Cheney_item img { width: 100%; height: 170px; object-fit: cover; display: block; background: #e2e8f0; }
+.Cheney_itemBody { padding: 16px; }
+.Cheney_itemBody h3 { font-size: 17px; margin-bottom: 8px; color: #16245c; }
+.Cheney_itemBody p { font-size: 13px; color: #475569; }
+.Cheney_meta { margin-top: 10px; font-size: 12px; color: #94a3b8; }
+.Cheney_form {
+  display: flex; flex-wrap: wrap; gap: 12px; align-items: center;
+  background: #fff; padding: 22px; border-radius: 14px; box-shadow: 0 6px 18px rgba(15,23,42,.08);
+}
+.Cheney_form input {
+  padding: 10px 14px; border: 1px solid #cbd5e1; border-radius: 8px; font-size: 15px;
+}
+.Cheney_btn {
+  padding: 10px 22px; border: none; border-radius: 8px; cursor: pointer;
+  background: #2563eb; color: #fff; font-size: 15px; font-weight: 700;
+}
+.Cheney_btn:hover { background: #1d4ed8; }
+.Cheney_result { margin-top: 18px; padding: 16px 20px; border-radius: 10px; font-size: 15px; }
+.Cheney_result.ok { background: #dcfce7; color: #166534; border-left: 4px solid #22c55e; }
+.Cheney_result.err { background: #fee2e2; color: #991b1b; border-left: 4px solid #ef4444; }
+.Cheney_json {
+  margin-top: 14px; background: #0f172a; color: #93c5fd; padding: 16px;
+  border-radius: 10px; font-family: Consolas, monospace; font-size: 13px;
+  white-space: pre-wrap; word-break: break-all;
+}
+.Cheney_loading { color: #64748b; padding: 20px 0; }

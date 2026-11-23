@@ -1,0 +1,15 @@
+{
+  "name": "cheney-fullstack-backend",
+  "version": "1.0.0",
+  "description": "于桐彬 24003150115 全栈项目后端",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "mysql2": "^3.11.5",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7"
+  }
+}
