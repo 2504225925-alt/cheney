@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!-- 姓名：于桐彬 | 学号：24003150115 | 时间：2026-11-23 | 大模型：Hy4 -->
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>数据库连接测试</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="Cheney_page">
+  <header class="Cheney_header">
+    <h1>数据库连接测试</h1>
+    <p>调用后端接口 /api/db-test，输入用户名与密码测试 MySQL 连接</p>
+    <a class="Cheney_back" href="index.html">← 返回首页</a>
+  </header>
+  <main class="Cheney_main">
+    <div class="Cheney_endpoint">POST <a href="/api/db-test" target="_blank">/api/db-test</a></div>
+    <div class="Cheney_form">
+      <input type="text" id="Cheney_user" placeholder="用户名" value="root">
+      <input type="password" id="Cheney_pass" placeholder="密码" value="123456">
+      <button class="Cheney_btn" id="Cheney_btn">连接数据库</button>
+    </div>
+    <div id="Cheney_result"></div>
+  </main>
+  <script src="js/database.js"></script>
+</body>
+</html>
